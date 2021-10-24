@@ -15,7 +15,7 @@ describe('/users endpoint testleri', () => {
       .request(server)
       .get('/users')
       .end((err, res) => {
-        res.should.have.status(200);
+        res.should.have.status(400);
 
         res.body.should.be.a('array');
 
