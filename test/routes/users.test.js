@@ -17,7 +17,7 @@ describe('/users endpoint testleri', () => {
       .end((err, res) => {
         res.should.have.status(200);
 
-        res.body.should.be.a('object');
+        res.body.should.be.a('array');
 
         res.body.every((i) => expect(i).to.have.all.keys('id', 'name'));
         done();
