@@ -11,7 +11,7 @@ describe('Index route testleri', () => {
       .request(server)
       .get('/')
       .end((err, res) => {
-        res.should.have.status(200);
+        res.should.have.status(400);
         done();
       });
   });
