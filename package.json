@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./dist/app.js",
+    "start": "node ./src/app.js",
     "dev": "nodemon ./src/app.js",
     "build": "sucrase ./src -d ./dist --transforms imports",
     "test": "mocha --recursive --exit"
